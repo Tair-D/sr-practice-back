@@ -44,10 +44,10 @@ const Building = require('./models/Building');
 
 // simple route
 app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to bezkoder application.' });
+  res.json({ message: 'Welcome to Tair s practice application.' });
 });
 
-app.get('/api', (req, res) => {
+app.get('/api', (req, res) => 
   Building.find({}, (err, data) => {
     if (err) {
       console.log(err);
